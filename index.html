@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Forms Demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container" id="intro" data-role="page">
+		<div class="header" data-role="header">
+			<h1>Forms Demo</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>Sup! We're going to be talking about forms in jQuery mobile so you don't have to ever touch it. So just sit back, relax, and promise me you're gonna forget this.</p>
+			<p>And I'm gonna try and focus on the cool stuff.</p>
+
+			<a href="#part1" class="ui-btn ui-shadow ui-corner-all">Go on...</a>
+		</div>
+		<div class="footer" data-role="footer">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<div class="container" id="part1" data-role="page">
+		<div class="header" data-role="header">
+			<h1>The Basics</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>Of course, jQuery Mobile has a lot of the basics covered like the traditional input fields and such.</p>
+			<p>However, there is one key point where it helps out a lot...</p>
+			
+			<a href="#part2" class="ui-btn ui-shadow ui-corner-all">Oh yeah?</a>
+		</div>
+		<div class="footer" data-role="footer">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<div class="container" id="part2" data-role="page">
+		<div class="header" data-role="header">
+			<h1>The Pseudo Native Shit</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>So boom, suddenly you've got a bunch of new shit to work with to spice shit up. The kind of shit you only ever saw in your favorite apps like Snapchat and Settings</p>
+			
+			<div class="form-group">
+				<label for="sliderTurnt">Wanna get turnt?</label>
+				<select name="sliderTurnt" id="sliderTurnt" data-role="slider">
+					<option value="yes">Yeah!</option>
+					<option value="no">Nah</option>
+				</select>
+			</div>
+
+			<p>Value sliders are nice too and provide a nice way of adjusting values which is supported in multiple ways like ranges and regular, and also a tonne of different styles.</p>
+
+			<label for="slider-fill">Ze Slider</label>
+			<input type="range" name="slider-fill" id="slider-fill" value="0" min="0" max="100" step="1" data-highlight="true">
+			
+			<p>There are also these dropdown selects, where you can either choose between a native one or a jquery styled one. Options are a good thing!</p>
+
+			<div class="form-group">
+				<label for="webDropdown">jQuery</label>
+				<select name="webDropdown" id="webDropdown" data-native-menu="false">
+					<option value="">Choose a framework</option>
+				    <option value="angular">Angular JS</option>
+				    <option value="react">React JS</option>
+				    <option value="ember">Ember JS</option>
+				    <option value="vanilla">Vanilla JS</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="nativeDropdown">Native (web)</label>
+				
+				<select name="nativeDropdown" id="nativeDropdown">
+					<option value="">Choose a stack</option>
+				    <option value="standard">LAMP</option>
+				    <option value="rush">WAMP</option>
+				    <option value="express">XAMPP</option>
+				    <option value="overnight">MAMP</option>
+				</select>
+			</div>
+
+
+			<a href="#part3" class="ui-btn ui-shadow ui-corner-all">Whoah!</a>
+		</div>
+		<div class="footer" data-role="footer">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<div class="container" id="part3" data-role="page">
+		<div class="header" data-role="header">
+			<h1>So much more that you can do</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>So these things are really cool to use if you are starting out with a framework that introduces you to hybrid app development.</p>
+
+			<p>You can learn a lot more at the official documentation site of jquerymobile here: <a href="http://demos.jquerymobile.com/1.4.5/forms">http://demos.jquerymobile.com/1.4.5/forms</a></p>
+
+
+			<a href="#intro" class="ui-btn ui-shadow ui-corner-all">Start over</a>
+		</div>
+		<div class="footer" data-role="footer">
+			<h4>Footer</h4>
+		</div>
+	</div>
+</body>
+</html>
